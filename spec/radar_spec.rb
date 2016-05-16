@@ -43,5 +43,9 @@ RSpec.describe Radar, ".status_for" do
         Radar.status_for("EDI")
       }.to raise_error Radar::NoSuchAirport
     end
+
+    it "just doesn't work" do
+      expect(1).to eq 2
+    end
   end
 end
